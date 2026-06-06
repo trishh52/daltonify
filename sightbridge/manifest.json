@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "SightBridge",
+  "version": "1.0",
+  "description": "Web Accessibility for Colorblind Users (Protanopia & Deuteranopia)",
+  "permissions": ["activeTab", "scripting", "storage"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
