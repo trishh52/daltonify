@@ -86,6 +86,3 @@ daltonify/
 4. A `MutationObserver` watches for dynamically loaded content (React, infinite scroll)
 5. The popup communicates mode/intensity changes via `chrome.runtime.sendMessage`
 
-## Built With
-
-[Google Antigravity IDE](https://antigravity.google) — agent-first development platform
